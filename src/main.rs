@@ -38,7 +38,7 @@ fn language_parser(input: &str) -> IResult<&str, &str> {
     Ok((input, language))
 }
 
-fn parse_person<'a>(input: &'a str) -> IResult<&'a str, Person> {
+fn parse_person(input: &str) -> IResult<&str, Person> {
     // //returns what remains after 'is' and also the tag we gave it
     // //which is 'Hello, my name is'. We don't need the tag
     // let (input, _) = tag("Hello, my name is ")(input)?;
